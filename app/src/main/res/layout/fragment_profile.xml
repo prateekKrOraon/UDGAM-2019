@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:id="@+id/bottom_frame"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="600dp"
+    android:background="@color/light_grey_F3">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="75dp"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/person_24"
+                    android:tint="@color/blue_0080" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/profile_name_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/text_spacing" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="85dp"
+            android:background="@color/light_grey_D3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/call_24"
+                android:layout_centerInParent="true"
+                android:tint="@color/blue_0080"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/profile_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone No"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/text_spacing"
+                android:textAppearance="@style/TextAppearance.AppCompat"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/email_24"
+                    android:layout_centerInParent="true"
+                    android:tint="@color/blue_0080"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/profile_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/text_spacing"
+                android:textAppearance="@style/TextAppearance.AppCompat"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/send_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <RelativeLayout
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/feedback_24"
+                    android:layout_centerInParent="true"
+                    android:tint="@color/blue_0080"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feedback"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/text_spacing"
+                android:textAppearance="@style/TextAppearance.AppCompat"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/log_out"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/logout_variant"
+                    android:tint="@color/blue_0080" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/text_spacing"
+                android:text="@string/log_out"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

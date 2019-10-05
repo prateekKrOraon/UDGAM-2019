@@ -1,0 +1,54 @@
+<android.support.design.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/developers"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@android:color/white"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/developer_layout"
+        android:background="@color/light_grey_F3">
+
+        <ImageView
+            android:id="@+id/developers_image"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:background="@color/design_default_color_primary"
+            android:padding="0dp"
+            android:src="@drawable/person_24" />
+
+        <TextView
+            android:id="@+id/developers_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <TextView
+            android:id="@+id/developers_designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Designation"
+            android:textColor="@color/light_grey_8b"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey_D3"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+</android.support.design.card.MaterialCardView>

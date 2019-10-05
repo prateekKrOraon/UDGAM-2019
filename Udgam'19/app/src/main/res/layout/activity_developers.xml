@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.ac.nitsikkim.udgam19.DevelopersActivity"
+    android:id="@+id/developer_activity_layout"
+    android:background="@color/light_grey_D3">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/developers_toolbar_bg"
+            app:contentScrim="@color/blue_0080"
+            app:layout_scrollFlags="enterAlways|scroll|exitUntilCollapsed"
+            app:title="Developers">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/developer_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/developers_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <View
+        android:id="@+id/back_drop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/overlay_dark"
+        android:clickable="false"
+        android:focusable="true"
+        android:visibility="gone"/>
+
+    <include layout="@layout/developer_detail_layout"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

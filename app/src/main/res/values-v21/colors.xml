@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0080FF</color>
+    <color name="colorPrimaryDark">@android:color/transparent</color>
+    <color name="colorAccent">#0080FF</color>
+    <color name="nav_bar_bg">@android:color/background_light</color>
+    <color name="blue_0080">#0080FF</color>
+    <color name="card_bg">#008577</color>
+    <color name="black">#000000</color>
+    <color name="grey">#808080</color>
+    <color name="light_grey_D3">#D3D3D3</color>
+    <color name="light_grey_F3">#F3F3F3</color>
+    <color name="card_button">#FFFFFF</color>
+    <color name="light_grey_8b">#8b8989</color>
+    <color name="default_color">#0080FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="green_7c">#7cb342</color>
+    <color name="purple_9C">#9C27B0</color>
+</resources>

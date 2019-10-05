@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/udgam">
+        <menu>
+            <group>
+                    <item
+                        android:id="@+id/nav_about_udgam"
+                        android:title="@string/about_udgam" />
+                    <item
+                        android:id="@+id/nav_sponsors"
+                        android:title="@string/sponsors" />
+                    <item
+                        android:id="@+id/nav_udgam_team"
+                        android:title="@string/udgam_team"/>
+                    <item
+                        android:id="@+id/nav_developers"
+                        android:title="@string/developers" />
+                </group>
+        </menu>
+    </item>
+
+
+    <item android:title="@string/application">
+        <menu>
+            <item
+                android:id="@+id/share_app"
+                android:icon="@drawable/share_24"
+                android:title="@string/share_app"/>
+            <item
+                android:id="@+id/report_bug"
+                android:icon="@drawable/adb_24"
+                android:title="@string/report_bug"/>
+            <item
+                android:id="@+id/rate_app"
+                android:icon="@drawable/grade_24"
+                android:title="@string/rate_app"/>
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/exit_app"
+                android:title="@string/exit" />
+        </menu>
+    </item>
+
+</menu>

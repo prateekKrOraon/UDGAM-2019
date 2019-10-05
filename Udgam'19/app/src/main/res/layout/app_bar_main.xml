@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="10dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/blue_0080"
+            android:layout_gravity="center_vertical"
+            app:popupTheme="@style/Theme.MaterialComponents.Light.DarkActionBar"
+            android:focusable="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/person_24"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/content_main" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bottom_nav_bar">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/frame_layout_main">
+                </FrameLayout>
+
+            </android.support.design.widget.CoordinatorLayout>
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/bottom_nav_bar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_alignParentBottom="true"
+                app:itemBackground="@color/nav_bar_bg"
+                app:itemIconTint="@color/color"
+                app:itemTextColor="@color/color"
+                app:elevation="10dp"
+                app:menu="@menu/bottom_nav_menu"
+                app:labelVisibilityMode="labeled"
+                android:theme="@style/Widget.MaterialComponents.BottomNavigationView">
+
+            </android.support.design.widget.BottomNavigationView>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>
